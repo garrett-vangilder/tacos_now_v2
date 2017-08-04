@@ -1,3 +1,3 @@
 exports.home = (req, res) => {
-  res.json({ working: 'it is' });
+  res.render('index');
 };
