@@ -1,0 +1,13 @@
+@import 'partials/variables';
+html {
+  font-size: 10px;
+  color:$black;
+}
+
+body {
+  background:
+    radial-gradient(
+      $yellow,
+      $red
+    );
+}
