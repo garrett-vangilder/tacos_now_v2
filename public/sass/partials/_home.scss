@@ -1,7 +1,13 @@
 .home {
-
   .intro {
+    margin-top: 125px;
     text-align: center;
+    &--invite {
+      margin-top: 80px;
+    }
+    &--form input {
+      margin: auto;
+    }
   }
 
 .title {

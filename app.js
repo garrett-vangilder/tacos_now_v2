@@ -6,6 +6,8 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const expressValidator = require('express-validator');
 const routes = require('./routes/index');
+const helpers = require('./helpers');
+
 
 const app = express();
 
@@ -26,6 +28,7 @@ app.use(session({
 }));
 
 app.use((req, res, next) => {
+  res.locals.h = helpers;
   res.locals.user = req.user || null;
   res.locals.currentPath = req.path;
   next();

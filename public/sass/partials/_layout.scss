@@ -18,3 +18,27 @@ body {
     )
     no-repeat center center / cover;
 }
+
+footer {
+   bottom:0;
+   width:100%;
+   margin-top: 25px;  
+}
+
+input{
+  &[type="text"],
+  &[type="email"] {
+    border-radius: 5px;
+    border: 2px solid $green;
+    padding: 20px 24px;
+    margin: 12px 0 0;
+    height: auto;
+    color: $black;
+    font-size: 14px;
+    max-width: 400px;
+  }
+  &[type="submit"] {
+    max-width: 300px;
+    color: $green;
+  }
+}
