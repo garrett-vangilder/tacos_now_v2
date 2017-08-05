@@ -6,6 +6,13 @@
   color: $black;
   text-transform: uppercase;
   justify-content: space-between;
+  z-index: 2;
+  width: 100%;
+  position: fixed;
+  top: 0; 
+  overflow: hidden;
+  background-color: $flat-black;
+  font-family: $body_font;
   &--title {
     font-size: 20px;
   }
@@ -22,7 +29,7 @@
   }
   &--link {
     text-decoration: none;
-    color: $black;
+    color: $silver;
   }
   &--link:hover {
     color: $green;

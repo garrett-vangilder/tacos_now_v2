@@ -15,8 +15,7 @@ html
             each item in h.menu
               li.nav--item
                 a.nav--link(href=item.slug, class=(currentPath.startsWith(item.slug) ? 'nav--link--active' : ''))
-                  span #{item.icon} 
-                  span #{item.title} 
+                  span #{item.icon} #{item.title} 
 
     block content
     block footer

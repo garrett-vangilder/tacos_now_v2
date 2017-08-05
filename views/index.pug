@@ -1,16 +1,17 @@
 extends layout
 
 block content
-  .container.home
+  .col-xs-12.home
     .intro.col-xs-12
       h2 🌮🌮🌮
       h1.title.text-center Tacos Now
       h2 🌮🌮🌮
-      h4 This is the Internet's first public taco database. 
-      .intro--invite
-        p Want to learn more? Sign up for our mailing list and be the first to know when Tacos Now is live.
-        form().intro--form
-          .form-group.col-xs-12
-            input.form-control(name='email' type='email' placeholder='Email')
-          input.btn(type='submit' value='Join Now')
+      h3 This is the Internet's <strong>first</strong> taco database. 
+    .invite.text-center
+      h3 Want to learn more? 
+      p Sign up for our mailing list and be the first to know when Tacos Now is live.
+      form().intro--form
+        .form-group.col-xs-12
+          input.form-control(name='email' type='email' placeholder='Email')
+        input.btn(type='submit' value='Join Now')
     

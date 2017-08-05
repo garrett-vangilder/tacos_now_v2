@@ -1,6 +1,8 @@
 .home {
+  padding: 0;
   .intro {
-    margin-top: 125px;
+    background-image: radial-gradient($yellow, $red);
+    padding: 125px 0;
     text-align: center;
     &--invite {
       margin-top: 80px;
