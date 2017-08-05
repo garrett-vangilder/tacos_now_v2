@@ -1,4 +1,10 @@
 @import 'partials/variables';
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
 html {
   font-size: 10px;
   color:$black;
@@ -9,5 +15,6 @@ body {
     radial-gradient(
       $yellow,
       $red
-    );
+    )
+    no-repeat center center / cover;
 }

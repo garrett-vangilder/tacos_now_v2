@@ -5,13 +5,17 @@ html
     link(rel='stylesheet', href='/dist/bootstrap.min.css')
     link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700")
     link(rel='stylesheet', href='/dist/style.css')
-    meta(name="viewport" content="width=device-width, initial-scale=1")
   body
     block header
       header
         nav.nav
-    .content.container
-      block content
+    block content
+    block footer
+      footer.footer
+        .container.text-center
+          p &copy; #{ new Date().getFullYear() } Garrett Vangilder All Rights Reserved.
+        
+
 
     block scripts
       script(src="/dist/App.bundle.js")
