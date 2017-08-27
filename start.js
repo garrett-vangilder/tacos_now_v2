@@ -4,9 +4,7 @@ require('dotenv').config({ path: 'variables.env' });
 
 mongoose.Promise = global.Promise;
 
-if (process.env.NODE_ENV === 'test') {
-  mongoose.connect(process.env.TESTDATABASE);
-} else if (process.env.NODE_ENV === 'dev') {
+if (process.env.NODE_ENV === 'dev') {
   mongoose.connect(process.env.LOCALDATABASE);
 } else if (process.env.NODE_ENV === 'production') {
   mongoose.connect(process.env.PRODUCTIONDATABASE);
