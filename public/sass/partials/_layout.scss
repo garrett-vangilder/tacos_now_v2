@@ -22,14 +22,39 @@ input{
     border-radius: 5px;
     border: 2px solid $green;
     padding: 20px 24px;
-    margin: 12px 0 0;
+    margin: 12px 0 0 !important;
     height: auto;
     color: $black;
     font-size: 14px;
     max-width: 400px;
+    width: 100%;
   }
-  &[type="submit"] {
-    max-width: 300px;
-    color: $green;
-  }
+}
+
+input.button {
+  letter-spacing: 0.25em;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 24px 0;
+  max-width: 300px;
+  text-transform: uppercase;
+  transition: background-color 300ms ease-out;
+  color: $green;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 2px solid #fff;
+  white-space: nowrap;
+  padding: 6px 12px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }

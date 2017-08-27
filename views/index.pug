@@ -4,14 +4,15 @@ block content
   .col-xs-12.home
     .intro.col-xs-12
       h2 🌮🌮🌮
-      h1.title.text-center Tacos Now
+      h1.title Tacos Now
       h2 🌮🌮🌮
       h3 This is the Internet's <strong>first</strong> taco database. 
-    .invite.text-center
-      h3 Want to learn more? 
-      p Sign up for our mailing list and be the first to know when Tacos Now is live.
-      form().intro--form
-        .form-group.col-xs-12
-          input.form-control(name='email' type='email' placeholder='Email')
-        input.btn(type='submit' value='Join Now')
-    
+    .columns.has-text-centered 
+      .invite.column
+        h3 Want to learn more? 
+        p Sign up for our mailing list and be the first to know when Tacos Now is live.
+        form().intro--form.columns
+          .field.column
+            input.control.has-icons-left(name='email' type='email' placeholder='Email')
+            input.button(type='submit' value='Join Now')
+      
